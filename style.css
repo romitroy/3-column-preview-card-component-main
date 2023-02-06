@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.contents{
+    background-color:hsl(0, 0%, 95%);
+    min-height:100vh;
+    display : flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+.content{
+    background-color: hsl(184, 100%, 22%);
+    min-height: 25rem;
+    max-width: 17rem;
+    padding : 2.5rem;
+    position: relative;
+}
+.content .image{
+    margin-bottom : 1.5rem;
+}
+.content h1{
+    color: hsl(0, 0%, 95%);
+    font-size:2.3rem;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.content p{
+    color : hsla(0, 0%, 100%, 0.75);
+    margin-top : 1.5rem;
+    margin-bottom: 6rem;
+}
+
+.content button{
+    position: absolute;
+    bottom: 0;
+    background : hsl(0, 0%, 95%);
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 2px solid hsl(0, 0%, 95%);
+    padding:12px 18px;
+    border-radius:30px;
+    text-transform: capitalize;
+}
+.sedans{
+    background-color:hsl(31, 77%, 52%);
+    border-radius:10px 0 0 10px;
+}
+.next{
+    background-color:hsl(184, 100%, 22%);
+}
+.other{
+    background-color:hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0px;
+
+}
+
+.sedans button{
+    color:hsl(31, 77%, 52%);
+}
+.next button {
+    color:hsl(184, 100%, 22%);
+}
+.other button{
+    color:hsl(179, 100%, 13%);
+}
+button:hover{
+    background-color:transparent;
+    color:hsl(0, 0%, 95%);
+}
+@media (max-width: 950px)  {
+    .contents{
+        flex-direction:column;
+        padding: 5rem 0;
+    }
+    .content{
+        min-width: 22rem;
+    }
+    .sedans{
+       
+        border-radius:10px 10px 0 0;
+    }
+    .other{
+     border-radius: 0 0 10px 10px ;
+
+
+}}
